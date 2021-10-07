@@ -1,18 +1,17 @@
 {
   "configuration": {
     "images-folder": "",
-    "internal-folder": "",
-    "demo-mode": false
+    "internal-folder": ""
   },
   "sets-of-classes": [
     {
       "name": "Cityscapes", "objects": [
       {"label": "VOID", "color": "#CFCFCF"},
-      {"label": "Road", "color": "#804080", "icon": "Road"},
-      {"label": "Sidewalk", "color": "#F423E8", "icon": "NaturePeople"},
-      {"label": "Parking", "color": "#FAAAA0", "icon": "Parking"},
-      {"label": "Rail Track", "color": "#E6968C", "icon": "Train"},
-      {"label": "Person", "color": "#DC143C", "icon": "Walk"},
+      {"label": "Not Dust", "color": "#FFA500", "icon": "Road"},
+      {"label": "Dust", "color": "#FF0000", "icon": "NaturePeople"},
+      {"label": "Vegetation", "color": "#00FF00", "icon": "Parking"},
+      {"label": "Not Vegetation", "color": "#510051", "icon": "Train"},
+      {"label": "Ignore", "color": "#DC143C", "icon": "Walk"},
       {"label": "Rider", "color": "#FF0000", "icon": "Motorbike"},
       {"label": "Car", "color": "#0000E8", "icon": "Car"},
       {"label": "Truck", "color": "#000046", "icon": "Truck"},
