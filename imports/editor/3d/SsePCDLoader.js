@@ -68,15 +68,15 @@ export default class SsePCDLoader {
                     PCDheader.str = PCDheader.str.replace(/\#.*/gi, '');
 
                     // parse
-                    PCDheader.version = /VERSION (.*)/i.exec(PCDheader.str);
-                    PCDheader.fields = /FIELDS (.*)/i.exec(PCDheader.str);
-                    PCDheader.size = /SIZE (.*)/i.exec(PCDheader.str);
-                    PCDheader.type = /TYPE (.*)/i.exec(PCDheader.str);
-                    PCDheader.count = /COUNT (.*)/i.exec(PCDheader.str);
-                    PCDheader.width = /WIDTH (.*)/i.exec(PCDheader.str);
-                    PCDheader.height = /HEIGHT (.*)/i.exec(PCDheader.str);
-                    PCDheader.viewpoint = /VIEWPOINT (.*)/i.exec(PCDheader.str);
-                    PCDheader.points = /POINTS (.*)/i.exec(PCDheader.str);
+                    PCDheader.version = /VERSION (.*)/.exec(PCDheader.str);
+                    PCDheader.fields = /FIELDS (.*)/.exec(PCDheader.str);
+                    PCDheader.size = /SIZE (.*)/.exec(PCDheader.str);
+                    PCDheader.type = /TYPE (.*)/.exec(PCDheader.str);
+                    PCDheader.count = /COUNT (.*)/.exec(PCDheader.str);
+                    PCDheader.width = /WIDTH (.*)/.exec(PCDheader.str);
+                    PCDheader.height = /HEIGHT (.*)/.exec(PCDheader.str);
+                    PCDheader.viewpoint = /VIEWPOINT (.*)/.exec(PCDheader.str);
+                    PCDheader.points = /POINTS (.*)/.exec(PCDheader.str);
                     // evaluate
                     if (PCDheader.version !== null)
                         PCDheader.version = parseFloat(PCDheader.version[1]);
